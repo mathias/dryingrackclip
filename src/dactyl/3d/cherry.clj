@@ -66,3 +66,21 @@
               (translate [0 0 (+ (/ key-height 2) pillar-height 1)]))))
 
 (def full-height (+ pillar-height key-height 1))
+
+(defn build-row [cols]
+  (apply union
+         (map #(->> pillar (translate [0 (* pillar-width %) 0 0 1])) (range cols))))
+
+(build-row 4)
+
+(defn build-grid [rows cols]
+  (apply union
+         (map #(->> (build-row cols) (translate [(- (* pillar-width %)) 0 0 0 1])) (range rows))))
+
+;; (build-grid 3 3)
+
+(def keyboard
+  (union
+   (build-grid 3 3)
+   (->> (build-row 2) (translate [pillar-width pillar-width 0 0 1]))
+   (->> (build-row 3) (translate [(- (* pillar-width 3)) (- (/ pillar-width 2)) 0 0 1]))))
