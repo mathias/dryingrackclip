@@ -1,6 +1,6 @@
-(defproject dactyle "0.1.0-SNAPSHOT"
-  :description "Making keyboards with Clojure"
-  :url "https://github.com/adereth/dactyl"
+(defproject dryingrackclip "0.1.0-SNAPSHOT"
+  :description "Making stuff in 3D with Clojure"
+  :url "https://github.com/mathias/dryingrackclip"
   :license {:name "Eclipse Public License"
             :url "http://www.eclipse.org/legal/epl-v10.html"}
   :dependencies [[org.clojure/clojure "1.6.0"]
