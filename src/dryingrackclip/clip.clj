@@ -21,7 +21,7 @@
    block-z))
 
 (def inner-hole
-  (cylinder inside-radius port-length))
+  (cylinder inside-radius (* 10 port-length)))
 
 (def left-port
   (->> inner-hole
