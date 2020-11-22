@@ -6,4 +6,4 @@
   :dependencies [[org.clojure/clojure "1.6.0"]
   		 [org.clojars.pallix/analemma "1.0.0"]
                  [unicode-math "0.2.0"]
-                 [scad-clj "0.1.0"]])
+                 [scad-clj "0.5.3"]])
