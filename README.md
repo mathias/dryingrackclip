@@ -1,6 +1,6 @@
 # drying rack clip
 
-A Clojure project for OpenSCAD that creates a 3D printable drying rack clip. (For Am*zonbasics "gullwing" drying rack.)
+A Clojure project for OpenSCAD that creates a 3D printable drying rack clip. (For Am*zonbasics "gullwing" clothes drying rack.)
 
 
 ## License
